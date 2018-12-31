@@ -1,0 +1,17 @@
+PATH
+  remote: vendor/rubyhave
+  specs:
+    rubyhave (1.0.0)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rubyhave!
+
+BUNDLED WITH
+   1.17.2

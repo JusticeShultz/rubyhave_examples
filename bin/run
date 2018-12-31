@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require "bundler"
+require File.expand_path("../level", __dir__)
+
+Bundler.require
+
+level = Level.new(ARGV[0])
+level.run
