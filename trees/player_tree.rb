@@ -1,13 +1,12 @@
 Dir[File.expand_path("../behaviors/*.rb", __dir__)].each { |file| require file }
 
-class PlayerTree < Rubyhave::Selector
+class PlayerTree < Rubyhave::Tree
   def initialize(entity)
     super
 
-    jump = WillFall.new(entity)
-    jump.add_child(Jump.new(entity))
+    sel = add_child(Rubyhave::Selector.new)
 
-    add_child(jump)
-    add_child(Walk.new(entity))
+    sel.add_child(WillFall.new).add_child(Jump.new)
+    sel.add_child(Walk.new)
   end
 end
