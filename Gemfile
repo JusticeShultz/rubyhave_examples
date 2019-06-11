@@ -1,4 +1,3 @@
 source "http://rubygems.org"
 
-gem "rubyhave", path: "vendor/rubyhave"
-
+gem "rubyhave", git: "https://github.com/bytebin/rubyhave.git"

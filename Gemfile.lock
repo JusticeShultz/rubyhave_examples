@@ -1,5 +1,6 @@
-PATH
-  remote: vendor/rubyhave
+GIT
+  remote: https://github.com/bytebin/rubyhave.git
+  revision: 15cdc9d4cf88507e944b4ec2aeb70cc3c9e3aa83
   specs:
     rubyhave (1.0.0)
 
